@@ -1,0 +1,43 @@
+@font-face {
+  font-family: ABC;
+  src: url(../assets/fonts/ABCMonumentGrotesk-Regular.woff2);
+}
+
+@font-face {
+  font-family: work;
+  src: url(../assets/fonts/worksans-variablefont_wght-webfont.woff2);
+}
+
+*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+  all: unset;
+  display: revert;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+ol,
+ul {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+}
+table {
+  border-collapse: collapse;
+}
+textarea {
+  white-space: revert;
+}
+
+html {
+  color: #0722f6;
+  background-color: #e9e3e9;
+  font-family: work;
+  font-weight: 400;
+}
+
+body {
+  font-size: 1.6rem;
+}
