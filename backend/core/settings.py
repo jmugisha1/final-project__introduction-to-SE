@@ -14,7 +14,7 @@ MEDIA_ROOT = BASE_DIR / 'media'
 ALLOWED_HOSTS = ["*"]
 
 CORS_ALLOWED_ORIGINS = [
-    "https://taakarwanda.vercel.app/",
+   'https://taakarwanda.pythonanywhere.com',
 ]
 
 CORS_ALLOW_CREDENTIALS = True
