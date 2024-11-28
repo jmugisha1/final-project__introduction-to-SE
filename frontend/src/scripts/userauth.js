@@ -25,7 +25,7 @@ export const useUserAuthStore = defineStore("auth", () => {
 
   async function authRegister(fullNames, email, password) {
     try {
-      const response = await axios.post("http://taakarwanda.pythonanywhere.com/", {
+      const response = await axios.post("https://taakarwanda.pythonanywhere.com/", {
         fullNames: fullNames,
         email: email,
         password: password,
