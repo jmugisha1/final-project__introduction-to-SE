@@ -10,7 +10,7 @@ const product = ref([]);
 async function getProductDetails() {
   try {
     const response = await axios.get(
-      `http://127.0.0.1:8000/api/productList/${route.params.id}/`,
+      `http://taakarwanda.pythonanywhere.com//api/productList/${route.params.id}/`,
       {
         headers: {
           "Content-Type": "application/json",
