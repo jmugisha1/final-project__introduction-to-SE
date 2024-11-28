@@ -103,7 +103,7 @@ async function authRegister() {
         border: 1.4px solid rgb(17, 0, 203);
         font-size: 16px;
         border-radius: 4px;
-        text-transform: capitalize;
+        text-transform: lowercase;
         color: rgb(17, 0, 203);
       }
 

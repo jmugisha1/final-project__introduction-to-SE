@@ -50,6 +50,7 @@ onMounted(() => {
         />
         <template #productName>{{ product.productName }}</template>
         <template #productPrice>from {{ product.productPrice }} frw</template>
+        <router-link :to="`/shop/${product.id}`">view</router-link>
       </product>
     </div>
   </section>

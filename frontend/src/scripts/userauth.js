@@ -1,6 +1,7 @@
 import { ref } from "vue";
 import { defineStore } from "pinia";
 import api from "./axios";
+import axios from "axios";
 
 export const useUserAuthStore = defineStore("auth", () => {
   const token = ref(null);
@@ -24,12 +25,14 @@ export const useUserAuthStore = defineStore("auth", () => {
 
   async function authRegister(fullNames, email, password) {
     try {
-      const response = await api.post("api/register/", {
+      const response = await axios.post("http://127.0.0.1:8000/api/register/", {
         fullNames: fullNames,
         email: email,
         password: password,
       });
-    } catch (error) {}
+    } catch (error) {
+      console.error("Error registering:", error);
+    }
   }
   async function authLogout() {
     token.value = null;
